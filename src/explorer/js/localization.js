@@ -29,12 +29,182 @@
    *      plUpload_i18n: 'es.js'
    *    }
    */
+
+  //TODO: Should dateTimeFormat be specified according to specific locale?
   var supportedLocales = {
     'en': {
       id: 'en',
       messages: 'en.json',
       plUpload_i18n: 'en.js',
       dateTimeFormat: 'MMMdhm' // special case default en to 12 hour clock
+    },
+    'cs-cz': {
+      id: 'cs',
+      messages: 'cs-CZ.json',
+      plUpload_i18n: 'cs.js',
+      dateTimeFormat: 'MMMdhm'
+    },
+    'da-dk': {
+      id: 'da',
+      messages: 'da-DK.json',
+      plUpload_i18n: 'da.js',
+      dateTimeFormat: 'MMMdhm'
+    },
+    'de-de': {
+      id: 'de',
+      messages: 'de-DE.json',
+      plUpload_i18n: 'de.js',
+      dateTimeFormat: 'MMMdhm'
+    },
+    'en-gb': {
+      id: 'en-GB',
+      messages: 'en-GB.json',
+      plUpload_i18n: 'en.js',
+      dateTimeFormat: 'MMMdhm'
+    },
+    'en-us': {
+      id: 'en-US-POSIX',
+      messages: 'en-US.json',
+      plUpload_i18n: 'en.js',
+      dateTimeFormat: 'MMMdhm'
+    },
+    'es-es': {
+      id: 'es',
+      messages: 'es-ES.json',
+      plUpload_i18n: 'es.js',
+      dateTimeFormat: 'MMMdhm'
+    },
+    'es-la': {
+      id: 'es',
+      messages: 'es-LA.json',
+      plUpload_i18n: 'es.js',
+      dateTimeFormat: 'MMMdhm'
+    },
+    'et-ee': {
+      id: 'et',
+      messages: 'et-EE.json',
+      plUpload_i18n: 'et.js',
+      dateTimeFormat: 'MMMdhm'
+    },
+    'fi-fi': {
+      id: 'fi',
+      messages: 'fi-FI.json',
+      plUpload_i18n: 'fi.js',
+      dateTimeFormat: 'MMMdhm'
+    },
+    'fr-ca': {
+      id: 'fr',
+      messages: 'fr-CA.json',
+      plUpload_i18n: 'fr.js',
+      dateTimeFormat: 'MMMdhm'
+    },
+    'fr-fr': {
+      id: 'fr',
+      messages: 'fr-FR.json',
+      plUpload_i18n: 'fr.js',
+      dateTimeFormat: 'MMMdhm'
+    },
+    'he': {
+      id: 'he',
+      messages: 'he.json',
+      plUpload_i18n: 'he.js',
+      dateTimeFormat: 'MMMdhm'
+    },
+    'id-id': {
+      id: 'id',
+      messages: 'id-ID.json',
+      plUpload_i18n: 'id.js',
+      dateTimeFormat: 'MMMdhm'
+    },
+    'it-it': {
+      id: 'it',
+      messages: 'it-IT.json',
+      plUpload_i18n: 'it.js',
+      dateTimeFormat: 'MMMdhm'
+    },
+    'ja-jp': {
+      id: 'ja',
+      messages: 'ja-JP.json',
+      plUpload_i18n: 'ja.js',
+      dateTimeFormat: 'MMMdhm'
+    },
+    'ko-kr': {
+      id: 'ko',
+      messages: 'ko-KR.json',
+      plUpload_i18n: 'ko.js',
+      dateTimeFormat: 'MMMdhm'
+    },
+    'nl-nl': {
+      id: 'nl',
+      messages: 'nl-NL.json',
+      plUpload_i18n: 'nl.js',
+      dateTimeFormat: 'MMMdhm'
+    },
+    'pl-pl': {
+      id: 'pl',
+      messages: 'pl-PL.json',
+      plUpload_i18n: 'pl.js',
+      dateTimeFormat: 'MMMdhm'
+    },
+    'pt-br': {
+      id: 'pt',
+      messages: 'pt-BR.json',
+      plUpload_i18n: 'pt_BR.js',
+      dateTimeFormat: 'MMMdhm'
+    },
+    'pt-pt': {
+      id: 'pt-PT',
+      messages: 'pt-PT.json',
+      plUpload_i18n: 'pt_BR.js',
+      dateTimeFormat: 'MMMdhm'
+    },
+    'ro-ro': {
+      id: 'ro',
+      messages: 'ro-RO.json',
+      plUpload_i18n: 'ro.js',
+      dateTimeFormat: 'MMMdhm'
+    },
+    'ru-ru': {
+      id: 'ru',
+      messages: 'ru-RU.json',
+      plUpload_i18n: 'ru.js',
+      dateTimeFormat: 'MMMdhm'
+    },
+    'sv-se': {
+      id: 'sv',
+      messages: 'sv-SE.json',
+      plUpload_i18n: 'sv.js',
+      dateTimeFormat: 'MMMdhm'
+    },
+    'th-th': {
+      id: 'th-TH',
+      messages: 'th-TH.json',
+      plUpload_i18n: 'th.js',
+      dateTimeFormat: 'MMMdhm'
+    },
+    'tr-tr': {
+      id: 'tr',
+      messages: 'tr-TR.json',
+      plUpload_i18n: 'tr.js',
+      dateTimeFormat: 'MMMdhm'
+    },
+    'vi-vn': {
+      id: 'vi',
+      messages: 'vi-VN.json',
+      plUpload_i18n: 'vi.js',
+      dateTimeFormat: 'MMMdhm'
+    },
+    'zh-cn': {
+      id: 'zh',
+      messages: 'zh-CN.json',
+      plUpload_i18n: 'zh_CN.js',
+      dateTimeFormat: 'MMMdhm'
+    },
+    'zh-hant': {
+      id: 'zh-Hant',
+      messages: 'zh-HANT.json',
+      plUpload_i18n: 'zh_CN.js',
+      dateTimeFormat: 'MMMdhm'
     }
   };
 
@@ -104,16 +274,16 @@
           // special case for the test locale.  Use 'en'
           locale = 'en';
         }
-        var effectiveLocale = this.getSupportedLocales()[locale];
+        var effectiveLocale = locUtil.getSupportedLocales()[locale];
         if (!effectiveLocale) {
           // no exact match, try the language code
           var language = locale.split('-')[0]
-          effectiveLocale = this.getSupportedLocales()[language];
+          effectiveLocale = locUtil.getSupportedLocales()[language];
         }
 
         // return the detected locale if found, or return the default locale
         // if no suitable locale is found
-        return effectiveLocale || this.getSupportedLocales()[DEFAULT_LOCALE];
+        return effectiveLocale || locUtil.getSupportedLocales()[DEFAULT_LOCALE];
       },
 
 
@@ -126,7 +296,7 @@
       setCurrentLocale: function (locale, callback) {
         callback = callback || function() {};
 
-        var effectiveLocale = this.getEffectiveLocale(locale);
+        var effectiveLocale = locUtil.getEffectiveLocale(locale);
         isTestLocale(locale === 'TEST');
 
         // Load the plupload i18n script now.  Don't need to wait on this;
@@ -150,7 +320,7 @@
             $.getJSON(cldrBaseUrl + 'ca-gregorian.json'),
             $.getJSON(cldrBaseUrl + 'numbers.json'),
             $.getJSON(cldrBaseUrl + 'timeZoneNames.json'),
-            $.getJSON(LOCALIZATION_MESSAGES_URL + effectiveLocale.id + '.json')
+            $.getJSON(LOCALIZATION_MESSAGES_URL + effectiveLocale.messages)
           ];
 
           if (!isSupplementalCldrLoaded) {
@@ -188,10 +358,10 @@
 
                 globalize.loadMessages(messagesDataStatusXhr[0]);
 
-                this.updateCurrentLocaleOfKo(effectiveLocale);
+                locUtil.updateCurrentLocaleOfKo(effectiveLocale);
 
                 return callback();
-              }.bind(this)
+              }.bind(locUtil)
             );
         }
       },
@@ -220,9 +390,9 @@
           globalize.load(likelySubtags, timeData, weekData, caGregorian, numbers, timeZoneNames);
           globalize.loadMessages(messages);
 
-          var effectiveLocale = this.getEffectiveLocale('en');
+          var effectiveLocale = locUtil.getEffectiveLocale('en');
 
-          this.updateCurrentLocaleOfKo(effectiveLocale);
+          locUtil.updateCurrentLocaleOfKo(effectiveLocale);
       },
 
       /**
@@ -241,9 +411,9 @@
        * @returns {string} Translated text
        */
       formatMessage: function (message, variables) {
-        if (this.getCurrentLocale()) {
+        if (locUtil.getCurrentLocale()) {
           try {
-            return this.getCurrentLocale().globalize.formatMessage(
+            return locUtil.getCurrentLocale().globalize.formatMessage(
               message, variables);
           } catch (e) {
             if (isTestLocale()) {
@@ -266,11 +436,11 @@
       formatDateTime: function (date) {
         var format = DEFAULT_DATETIME_FORMAT;
 
-        if (this.getCurrentLocale() &&
+        if (locUtil.getCurrentLocale() &&
             locUtil.getCurrentLocale().locale.dateTimeFormat)
           format = locUtil.getCurrentLocale().locale.dateTimeFormat;
 
-        return this.getCurrentLocale().globalize.dateFormatter(
+        return locUtil.getCurrentLocale().globalize.dateFormatter(
           {skeleton: format})(date);
       },
 
@@ -281,7 +451,7 @@
        */
       formatNumber: function(n) {
         if ((typeof n) === 'number')
-          return this.getCurrentLocale().globalize.formatNumber(n);
+          return locUtil.getCurrentLocale().globalize.formatNumber(n);
         else
           return n
       },
@@ -330,7 +500,7 @@
         var formattedVariables = {};
 
         if (variables) {
-          var self = this;
+          var self = locUtil;
           Object.keys(variables).forEach(function (key) {
             var value = variables[key];
             if ((typeof value) === 'number') {
@@ -345,8 +515,8 @@
           });
         }
 
-        return this.wrapTestLocale(
-          this.formatMessage(message, formattedVariables), propertyName);
+        return locUtil.wrapTestLocale(
+          locUtil.formatMessage(message, formattedVariables), propertyName);
       },
 
 
@@ -358,7 +528,7 @@
        * @returns {*|string}
        */
       formatAndWrapDateTime: function(d, propertyName) {
-        return this.wrapTestLocale(this.formatDateTime(d), propertyName);
+        return locUtil.wrapTestLocale(locUtil.formatDateTime(d), propertyName);
       },
 
 
@@ -369,7 +539,7 @@
        * @param [propertyName] Optional. The HTML property being localized
        */
       formatAndWrapNumber: function(n, propertyName) {
-        return this.wrapTestLocale(this.formatNumber(n), propertyName);
+        return locUtil.wrapTestLocale(locUtil.formatNumber(n), propertyName);
       }
     };
 

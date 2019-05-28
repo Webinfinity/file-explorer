@@ -28,6 +28,7 @@
     services: ['all'],
     types: ['all'],
     display_backdrop: true,
+    locale: 'fr-FR'
   };
 
   const FOLDER_CHOOSER_OPTIONS = {
@@ -37,6 +38,7 @@
     computer: true,
     services: ['file_store'],
     types: ['folders'],
+    locale: 'fr-FR'
   };
 
   const SAVER_OPTIONS = {
@@ -84,6 +86,11 @@
     global = window.Kloudless.fileExplorer, name, type = 'chooser', options,
     elementId,
   }) {
+
+    global.setGlobalOptions({
+      explorerUrl: 'http://localhost:3000/dist/explorer/explorer.html',
+    });
+
     const obj = (type === 'dropzone'
       ? global.dropzone(options) : global.explorer(options));
     EVENTS.forEach(event => obj.on(
