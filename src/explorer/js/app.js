@@ -1005,37 +1005,21 @@
         $(".search").off('click');
         $("#search-enable-button, #search-back-button").on('click', function() {
           $(".refresh-button, #search-back-button").toggle();
-          var duration = 150;
+
           if ($("#search-query").is(":visible")) {
-            //$("#search-enable-button").removeClass('search-active');
             explorer.view_model.files.refresh();
             //Slide along with search query
-            // $("#search-enable-button").animate({
-            //   left: "+=360"
-            // }, duration);
-            // $("#search-enable-button").animate({
-            //   left: "-=360"
-            // }, 0);
+
             $("#search-enable-button").toggle();
-            $("#search-query").toggle('slide', {
-              direction: "right"
-              }, duration, function() {
-                $(".breadcrumbs, .new-folder-button").toggle();
-            });
+            $("#search-query").toggle();
+            $(".breadcrumbs, .new-folder-button").toggle();
+
             $("#search-query").val("");
           } else{
-            //$("#search-enable-button").addClass('search-active');
-            $(".new-folder-button, .breadcrumbs").toggle();
-            // $("#search-enable-button").animate({
-            //   left: "+=360"
-            // }, 0);
-            // $("#search-enable-button").animate({
-            //   left: "-=360"
-            // }, duration);
             $("#search-enable-button").toggle();
-            $("#search-query").toggle('slide', {
-              direction: "right"
-            }, duration);
+            $("#search-query").toggle();
+            $(".new-folder-button, .breadcrumbs").toggle();
+
             $("#search-query").focus()
               .off("keyup")
               .on("keyup", function(e) {
