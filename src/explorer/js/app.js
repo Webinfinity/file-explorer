@@ -1004,18 +1004,18 @@
         //Search jquery actions
         $(".search").off('click');
         $("#search-enable-button, #search-back-button").on('click', function() {
-          $(".refresh-button, #search-back-button").toggle();
+          $(".refresh-button, #search-back-button, #search-enable-button").toggle();
           var duration = 150;
           if ($("#search-query").is(":visible")) {
-            $("#search-enable-button").removeClass('search-active');
+            //$("#search-enable-button").removeClass('search-active');
             explorer.view_model.files.refresh();
             //Slide along with search query
-            $("#search-enable-button").animate({
-              left: "+=360"
-            }, duration);
-            $("#search-enable-button").animate({
-              left: "-=360"
-            }, 0);
+            // $("#search-enable-button").animate({
+            //   left: "+=360"
+            // }, duration);
+            // $("#search-enable-button").animate({
+            //   left: "-=360"
+            // }, 0);
             $("#search-query").toggle('slide', {
               direction: "right"
               }, duration, function() {
@@ -1023,14 +1023,14 @@
             });
             $("#search-query").val("");
           } else{
-            $("#search-enable-button").addClass('search-active');
-            $(".new-folder-button, .breadcrumbs").toggle();
-            $("#search-enable-button").animate({
-              left: "+=360"
-            }, 0);
-            $("#search-enable-button").animate({
-              left: "-=360"
-            }, duration);
+            //$("#search-enable-button").addClass('search-active');
+            $(".new-folder-button, .breadcrumbs, #search-enable-button").toggle();
+            // $("#search-enable-button").animate({
+            //   left: "+=360"
+            // }, 0);
+            // $("#search-enable-button").animate({
+            //   left: "-=360"
+            // }, duration);
             $("#search-query").toggle('slide', {
               direction: "right"
             }, duration);
