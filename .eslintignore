@@ -1,3 +1,7 @@
+node_modules
 .tmp
 dist
 lib
+dev-server/localization
+!.eslintrc.js
+!.eslintrc-ts.js
